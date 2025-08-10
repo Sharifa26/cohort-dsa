@@ -27,8 +27,24 @@ function f(n,fa){
     }
     f(n-1,fa *n);
 }
+// console.log(fact(5));
+// console.log(f(5,1));
 
-console.log(fact(5));
+function factorial(n){
+    let result = 1n;
+    if( n==0 || n==1){
+        return 1n;
+        
+    }
+    else {
+        for (let i = 2n; i <= BigInt(n);i++){
+            result *= i;
+        }
+        return result
+    }
+    
+}
 
-console.log(f(5,1));
+console.log(factorial(1).toString());
+
 
