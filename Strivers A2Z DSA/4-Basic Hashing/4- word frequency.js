@@ -40,3 +40,11 @@ function count(s){
 }
 
 console.log(count(sentence));
+
+//Time complexity and space
+/** TC == N+N 
+ *      = 2N
+ *      = O(N)
+ * 
+ *  SC == O(N) 
+*/
