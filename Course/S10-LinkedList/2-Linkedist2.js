@@ -24,24 +24,24 @@ class LinkedList {
     }
 
     //Inserting at the end of the list.
-    add(node){
-        if(this.head === null){
+    add(node) {
+        if (this.head === null) {
             this.head = node;
             this.tail = node;
-        }else{
+        } else {
             this.tail.next = node;
             this.tail = node;
         }
     }
 
     //Inserting at the beginning of the list.
-    addAtbeginning(node){
+    addAtbeginning(node) {
         node.next = this.head;
         this.head = node;
     }
 
     //Inserting a node after another node.
-    addAfterNode(node,prev){
+    addAfterNode(node, prev) {
         node.next = prev.next;
         prev.next = node;
     }
@@ -63,7 +63,7 @@ list.add(node3);
 list.add(node4);
 list.add(node5);
 list.addAtbeginning(node6);
-list.addAfterNode(node7,node3)
+list.addAfterNode(node7, node3)
 
 
 
