@@ -65,3 +65,13 @@ console.log(searchInsert(nums, target));
  - Time complexity: O(log n)
  - Space complexity: O(1)
 */
+
+
+/**
+ * 1- first take the two pointers and move them towards each other -- left and right
+ * 2- if the middle element is equal to the target, return the index
+ * 3- if the middle element is greater than the target, move the right pointer to the middle element
+ * 4- if the middle element is less than the target, move the left pointer to the middle element
+ * 5- if the midddle is not found, return the index of the element that is greater than the target
+ * 6- return the Left pointer
+ */
