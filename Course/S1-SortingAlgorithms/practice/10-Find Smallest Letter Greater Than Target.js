@@ -79,6 +79,6 @@ var BinarySearch = function (letters, target) {
 console.log(BinarySearch(letters, target));
 
 /**
- - Time complexity: O(n log n )
+ - Time complexity: O(log n )
  - Space complexity: O(1)
 */
