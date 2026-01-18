@@ -29,6 +29,8 @@ function Max(arr, k) {
  * TC = (n-k)*k
  *    = nk - k^2
  *    =O(nk)
+ * 
+ * space complexity: O(1).
  */
 
 function slidingWindow(arr, k) {
@@ -45,3 +47,8 @@ function slidingWindow(arr, k) {
 }
 
 console.log(slidingWindow([3, 5, 2, 7, 1, 4], 3));
+
+/**
+ * Time complexity: O(n).
+ * space complexity: O(1).
+ */
