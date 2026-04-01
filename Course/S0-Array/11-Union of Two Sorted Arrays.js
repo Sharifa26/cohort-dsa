@@ -60,3 +60,8 @@ let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], arr2 = [2, 3, 4, 4, 5, 11, 12];
 let n = arr1.length, m = arr2.length;
 
 console.log(Union(arr1, n, arr2, m));
+
+/**
+- Time complexity: O(n+m)
+- Space complexity: O(n+m)
+*/
