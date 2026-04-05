@@ -133,14 +133,14 @@ function better(s) {
 
     for (let ch of map.keys()) {
 
-        if(visited.has(ch)) continue;
+        if (visited.has(ch)) continue;
         let mirror;
         if (ch >= 'a' && ch <= 'z') {
             mirror = String.fromCharCode(
                 'z'.charCodeAt(0) - (ch.charCodeAt(0) - 'a'.charCodeAt(0))
             );
         }
-        else{
+        else {
             mirror = String.fromCharCode(
                 '9'.charCodeAt(0) - (ch.charCodeAt(0) - '0'.charCodeAt(0))
             );
