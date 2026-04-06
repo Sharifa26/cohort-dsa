@@ -120,6 +120,11 @@ function mirror(s) {
 // let s = "ab1z9";
 // console.log(mirror(s));
 
+/**
+ * Time complexity: O(n)
+ * space complexity: O(n)
+*/
+
 
 function better(s) {
     let map = new Map();
