@@ -48,6 +48,7 @@ class LinkedList {
 
                 previous.next = newNode;
                 newNode.next = current;
+                break;
             }
 
             previous = current;
@@ -68,6 +69,23 @@ class LinkedList {
         while (current !== null) {
             if (current.next == null) {
                 previous.next = null;
+                break;
+            }
+            previous = current;
+            current = current.next;
+        }
+    }
+
+    deleteAtAnyPos(pos) {//TC=O(n)
+        let current = this.head;
+        let count = 0;
+        let previous = current;
+
+        while (current !== null) {
+            count++;
+            if (count === pos) {
+                previous.next = current.next;
+                break;
             }
             previous = current;
             current = current.next;
@@ -86,7 +104,7 @@ link.addAtBegining(0);
 link.atAnyPosition(3, 5)
 link.print();
 
-link.deleteAtEnd();
+link.deleteAtAnyPos(2)
 
 //link.deleteAtBegining();
 console.log(link);
