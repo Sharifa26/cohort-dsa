@@ -37,14 +37,19 @@ function linked(val, next) {
 
 
 
-let LinkedList = new linked(2);
-LinkedList.next = new linked(4);
-LinkedList.next.next = new linked(3);
+let LinkedList = new linked(9);
+LinkedList.next = new linked(9);
+LinkedList.next.next = new linked(9);
+LinkedList.next.next.next = new linked(9);
+LinkedList.next.next.next.next = new linked(9);
+LinkedList.next.next.next.next.next = new linked(9);
+LinkedList.next.next.next.next.next.next = new linked(9);
 
 
-let LinkedList2 = new linked(5);
-LinkedList2.next = new linked(6);
-LinkedList2.next.next = new linked(4);
+let LinkedList2 = new linked(9);
+LinkedList2.next = new linked(9);
+LinkedList2.next.next = new linked(9);
+LinkedList2.next.next.next = new linked(9);
 
 
 
