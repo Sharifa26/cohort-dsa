@@ -23,6 +23,26 @@ Constraints:
 The number of nodes in the tree is in the range [1, 1000].
 -100 <= Node.val <= 100
  */
+// function Node(val, left, right) {
+//     this.val = (val === undefined ? 0 : val);
+//     this.left = (left === undefined ? null : left);
+//     this.right = (right === undefined ? null : right)
+// }
+
+class Node {
+    constructor(value) {
+        this.val = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+
+let p = new Node(1);
+p.left = new Node(2);
+p.right = new Node(3);
+
+
 
 var isSymmetric = function (root) {
     function dfs(p, q) {
@@ -33,3 +53,11 @@ var isSymmetric = function (root) {
     }
     return dfs(root.left, root.right);
 };
+
+
+console.log(isSymmetric(p));
+
+/**
+Time complexity: O(n)
+Space complexity: O(n)
+*/
