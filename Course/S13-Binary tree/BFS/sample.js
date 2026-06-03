@@ -41,10 +41,66 @@ function BFS(root) {
 }
 
 
-console.log(BFS(tree));
+//console.log(BFS(tree));
 
 
 /**
 Time complexity: O(n)
 Space complexity: O(n)
 */
+
+
+
+function BFS2(root) {
+    if (root == null) return;
+
+    let queue = [];
+
+    queue.push(root);
+
+    while (queue.length > 0) {
+        let size = queue.length;
+
+        for (let i = 0; i < size; i++) {
+            let node = queue.shift();
+
+            console.log(node.val);
+
+            if (node.left !== null) {
+                queue.push(node.left);
+            }
+            if (node.right !== null) {
+                queue.push(node.right);
+            }
+        }
+    }
+
+}
+
+
+//console.log(BFS2(tree));
+
+
+
+function BFS3(root) {
+    if (root == null) return;
+
+    let queue = [root];
+    let front = 0;
+
+    while (front < queue.length) {
+        let node = queue[front++];
+
+        console.log(node.val);
+
+        if (node.left !== null) {
+            queue.push(node.left);
+        }
+        if (node.right !== null) {
+            queue.push(node.right);
+        }
+    }
+    return queue;
+}
+
+console.log(BFS3(tree));
