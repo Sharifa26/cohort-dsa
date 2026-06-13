@@ -6,7 +6,6 @@
  *                    - If we do Inorder traversal, it will be in sorted order or Increasing order
  */
 
-
 /**
  *                12
  *               /  \
@@ -36,9 +35,6 @@ root.right.left = new Node(15);
 
 root.left.left.left = new Node(2);
 root.left.left.right = new Node(7);
-
-
-
 
 
 
