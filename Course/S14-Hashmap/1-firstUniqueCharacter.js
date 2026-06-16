@@ -48,7 +48,7 @@ const UniqueCharacter = (s) => {
 
     for (let i = 0; i < s.length; i++) {
         let idx = s.charCodeAt(i) - 97;
-        if(arr[idx] == 1){
+        if (arr[idx] == 1) {
             return i;
         }
     }
@@ -56,7 +56,7 @@ const UniqueCharacter = (s) => {
     return -1;
 }
 
-console.log(UniqueCharacter('ssarifa'));
+//console.log(UniqueCharacter('ssarifa'));
 
 /**
  * TC - O(n)
@@ -86,3 +86,32 @@ var firstUniqChar = function (s) {
  * TC - O(n)
  * SC - O(1)
  */
+
+
+var firstUniqChar1 = function (s) {
+    let a = 'a'.charCodeAt(0)
+    let arr = new Array(26).fill(0);
+
+    for (let i = 0; i < s.length; i++) {
+        let char = s[i].codePointAt(0) - a;
+        arr[char]++;
+    }
+
+
+
+    for (let i = 0; i < s.length; i++) {
+
+        let char = s[i].codePointAt(0) - a;
+        if (arr[char] == 1) {
+
+            return i;
+        }
+    }
+    return -1;
+};
+let s = "loveleetcode"
+
+console.log(firstUniqChar1(s));
+
+let ans = String.fromCharCode(97);
+console.log(ans);
