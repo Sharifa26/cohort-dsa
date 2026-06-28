@@ -46,6 +46,12 @@ var isPowerOfThree = function (n) {
 console.log(isPowerOfThree(27));
 
 
+
+var isPowerOfThree = function (n) {
+    return n > 0 && 1162261467 % n === 0;
+};
+
+
 /**
  Time Complexity:  O(log3 n)
  space Complexity: O(1)
